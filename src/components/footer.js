@@ -10,7 +10,8 @@ export default function Footer() {
           width={25}
           height={25}
           alt="neo_next logo"
-          priority="true"
+          priority
+          style={{width:"auto", height:"auto"}}
         />
       </div>
 

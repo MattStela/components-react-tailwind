@@ -81,7 +81,15 @@ export default function HeaderEx1() {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0">
               <a href="#" className="text-white text-xl font-bold">
-                <Image src="/neo_logo.png" width={50} height={50} alt="teste" />
+                <Image
+                        className="hover:cursor-pointer"
+                        src="/neo_logo.png"
+                        width={50}
+                        height={50}
+                        alt="neo_next logo"
+                        style={{ width: "auto", height: "auto" }}
+                        loading="eager"
+                      />
               </a>
             </div>
             <div className="hidden sm:block sm:ml-6">

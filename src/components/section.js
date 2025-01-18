@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Section({firstColor, secondColor, href, text}) {
   return (
-    <div className="h-10 w-full relative flex items-center justify-center">
+    <div className="h-20 w-full relative flex items-center justify-center">
       <style jsx>{`
         .inner-div1,
         .inner-div2 {

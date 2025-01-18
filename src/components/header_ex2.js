@@ -7,9 +7,17 @@ export default function HeaderEx2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 w-[98%] rounded-3xl h-20 flex justify-between items-center m-4 px-6">
+    <nav className="bg-gray-800 w-[98%] rounded-full h-20 flex justify-between items-center m-4 px-6">
       <div className="flex items-center space-x-4">
-        <Image src="/neo_logo.png" width={50} height={50} alt="Logo" className="rounded-full" />
+        <Image
+                className="hover:cursor-pointer"
+                src="/neo_logo.png"
+                width={50}
+                height={50}
+                alt="neo_next logo"
+                style={{ width: "auto", height: "auto" }}
+                loading="eager"
+              />
         <h1 className="text-white text-2xl font-bold">Meu Menu</h1>
       </div>
       <div className="hidden md:flex space-x-8">

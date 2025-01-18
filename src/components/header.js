@@ -11,7 +11,8 @@ export default function Header() {
             width={100}
             height={100}
             alt="neo_next logo"
-            priority="true"
+            priority
+            style={{ width: "auto", height: "auto" }}
           />
         </a>
         <p className="text-[#FEF9BF] font-bold">Next</p>
