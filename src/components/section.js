@@ -2,31 +2,45 @@
 
 import Link from "next/link";
 
-export default function Section({firstColor, secondColor, href, text}) {
+export default function Section({ firstColor = '#DAA520', secondColor = '#000000', href, text }) {
   return (
-    <div className="h-20 w-full relative flex items-center justify-center">
+    <div className="h-16 w-full relative flex items-center justify-center">
       <style jsx>{`
         .inner-div1,
-        .inner-div2 {
+        .inner-div2,
+        .inner-div3 {
           position: absolute;
           top: 0;
           width: 100%;
           height: 100%;
         }
+        .inner-div1,
+        .inner-div2 {
+          width: 20%;
+          background-color: ${secondColor};
+        }
         .inner-div1 {
-          clip-path: polygon(20% 0, 25% 0, 5% 100%, 0% 100%);
-          background-color: ${firstColor};
-          left: 2%;
+          left: 0;
         }
         .inner-div2 {
-          clip-path: polygon(32% 0, 100% 0, 100% 100%, 12% 100%);
-          background-color: ${secondColor};
-          right: 2%;
+          right: 0;
+        }
+        .inner-div3 {
+    
+
+          background: linear-gradient(90deg, ${secondColor} 0%, ${firstColor} 50%, ${secondColor} 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
         }
       `}</style>
-      <div className="inner-div1 flex justify-center items-center">---</div>
-      <div className="inner-div2 flex justify-center items-center">
-        <Link href={href} className="text-sm font-bold hover:text-gray-400">{text}</Link>
+      <div className="inner-div1"></div>
+      <div className="inner-div2"></div>
+      <div className="inner-div3">
+        <Link href={href} className="text-black text-base font-bold hover:text-gray-300">
+          {text}
+        </Link>
       </div>
     </div>
   );
