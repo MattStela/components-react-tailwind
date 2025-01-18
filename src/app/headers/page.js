@@ -3,6 +3,10 @@ import HeaderEx2 from "@/components/header_ex2";
 import HeaderEx3 from "@/components/header_ex3";
 import HeaderEx4 from "@/components/header_ex4";
 
+export const metadata = {
+  title:"headers",
+}
+
 export default function Headers() {
   return (
     <div className="text-sm font-sans w-full flex flex-col justify-center items-center">
