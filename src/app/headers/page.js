@@ -2,6 +2,8 @@ import HeaderEx1 from "@/components/header_ex1";
 import HeaderEx2 from "@/components/header_ex2";
 import HeaderEx3 from "@/components/header_ex3";
 import HeaderEx4 from "@/components/header_ex4";
+import HeaderEx5 from "@/components/header_ex5";
+import HeaderEx6 from "@/components/header_ex6";
 import Advertise from "@/components/advertise";
 
 export const metadata = {
@@ -44,6 +46,18 @@ export default function Headers() {
           header_ex4: menu com subitems (também usei react icons)
         </p>
         <HeaderEx4 />
+      </div>
+      <div className="flex flex-col justfy-center items-center my-10 w-full space-y-3 text-center">
+        <p className="w-[70%]">
+          header_ex5: menu com login
+        </p>
+        <HeaderEx5 />
+      </div>
+      <div className="flex flex-col justfy-center items-center my-10 w-full space-y-3 text-center">
+        <p className="w-[70%]">
+          header_ex6: sem cor de background, responsivo e moderno, com underlines aparecendo embaixo dos itens e hamburguer icon centralizado para dispositivos médios e pequenos
+        </p>
+        <HeaderEx6 />
       </div>
     </div>
   );

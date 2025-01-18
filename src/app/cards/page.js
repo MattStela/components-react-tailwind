@@ -2,6 +2,7 @@ import Advertise from "@/components/advertise";
 import CardEx1 from "@/components/card_ex1";
 import CardEx2 from "@/components/card_ex2";
 import CardEx3 from "@/components/card_ex3";
+import CardEx4 from "@/components/card_ex4";
 
 export const metadata = {
   title: "cards",
@@ -23,6 +24,10 @@ export default function Cards() {
       <div className="flex space-y-4 flex-col items-center justify-center w-full">
         <p>Card_ex3: um card mais elegante</p>
         <CardEx3 />
+      </div>
+      <div className="flex space-y-4 flex-col items-center justify-center w-full">
+        <p>Card_ex4: um login feito no estilo premium</p>
+        <CardEx4 />
       </div>
       
     </div>
